@@ -33,6 +33,7 @@ def find_index(list)
 end
 
 
+
 def length_element(list)
   print "vous voulais les element de quel taille : "
   value_index = gets.chomp.to_i
@@ -74,6 +75,12 @@ def sort_by_length(list)
   puts "j'espere que tu regrette d'avoir fait  =)"
 end
 
+
+def sort_by_az(list)
+  list_sort_az = list.sort_by { |word| word.downcase }
+  puts list_sort_az
+  puts "j'espere que tu regrette d'avoir fait  =)"
+end
 
 def group_words_by_length(list)
   list_sort_length = list.sort_by { |word| word.length }
